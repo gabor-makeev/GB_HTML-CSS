@@ -1,0 +1,270 @@
+@media (max-width: 1200px) {
+    .wrap {
+        width: 736px;
+    }
+
+    .promo {
+
+        min-height: 368px;
+
+        &-img {
+            height: 386px;
+            width: 368px;
+            background-size: cover;
+            margin-left: -32px;
+        }
+
+        &-title {
+            margin: 138px 0 0 0;
+            padding-left: 16px;
+            border-left: 12px solid $pink;
+            height: 78px;
+        }
+    
+        &-title h2 {
+            @include fontDetails(bold, 24px, 29px);
+            color: $almostBlack;
+            margin: 0;
+        }
+    
+        &-title .promo-t1 {
+            @include fontDetails(900, 44px, 53px);
+        }
+        
+        &-title .promo-t2 {
+            font-weight: bold;
+            color: $pink;
+        }
+    }
+
+    .categories {
+        margin-top: 19.95px;
+    }
+
+    .category {
+        height: 167.62px;
+
+        &-accessories {
+            height: 116.09px;
+            margin-bottom: 154.92px;
+        }
+    }
+
+    .all-featured-products {
+        margin: 2.48px auto 64.52px auto;
+    }
+
+    .shop-features {
+        padding: 48.16px 0 64px 0;
+        min-height: 610px;
+
+        &-position {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 498px;
+            
+        }
+    }
+
+    .feedback {
+        
+        background: url(../img/feedback_background_tablet.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &-position {
+            flex-direction: column;
+            align-items: center;
+            margin: 64px 0 140px 0;
+            width: 100%;
+        }
+
+        &:hover .review {
+            transform: scale(1.1);
+        }
+    
+        &:hover .feedback-subscribe-form {
+            transform: scale(1.1);
+        }
+
+    }
+
+    .feedback-subscribe-form {
+        margin-right: 0;
+    }
+
+    .review  {
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 780px) {
+    .wrap {
+        width: 375px;
+        padding: 0 16px;
+    }
+
+    .header {
+        &-account,
+        &-cart {
+            display: none;
+        }
+
+        &-menu {
+            margin-right: 0;
+        }
+    }
+
+    .promo {
+        min-height: 363px;
+
+        &-position {
+            min-height: 363px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-img {
+            display:none;
+        }
+
+        &-title {
+            margin: 0;
+            padding-left: 16px;
+            border-left: 12px solid $pink;
+            height: 66px;
+            width: 263px;
+        }
+    
+        &-title h2 {
+            @include fontDetails(bold, 20px, 24px);
+            color: $almostBlack;
+            margin: 0;
+        }
+    
+        &-title .promo-t1 {
+            @include fontDetails(900, 38px, 46px);
+        }
+        
+        &-title .promo-t2 {
+            font-weight: bold;
+            color: $pink;
+        }
+    }
+
+    .categories {
+        margin: 64px 0 64px 0;
+        min-height: 951px;
+
+        &-position {
+            flex-direction: column;
+        }
+    }
+
+    .category {
+        width: 100%;
+        height: 248px;
+        margin-bottom: 32px;
+    }
+
+    .category-accessories {
+        margin: 0;
+        height: 111px;
+    }
+
+    .featured-header {
+        
+        & p {
+            margin: 0 0 64.7px 0;
+        }
+    }
+
+    .featured-item {
+        margin-bottom: 15.61px;
+    }
+
+    .all-featured-products {
+        margin: 25px auto 96px auto;
+    }
+
+    .shop-features {
+        padding: 48px 0 81px 0;
+    }
+
+    .feedback {
+
+        &-position {
+            margin: 64px 0 109.92px 0;
+            width: 100%;
+        }
+
+        &:hover .review {
+            transform: scale(1.1);
+        }
+    
+        &:hover .feedback-subscribe-form {
+            transform: scale(1.1);
+        }
+
+    }
+
+    .feedback-subscribe-form {
+        margin-right: 0;
+    }
+
+    .review  {
+        margin-bottom: 41px;
+
+        & img {
+            width: 91.73px;
+            height: 91.73px;
+        }
+
+        & p {
+            font-size: 18px;
+            line-height: 22px;
+            margin-top: 30px;
+        }
+    }
+
+    .feedback-subscribe-form {
+        
+        & p {
+            @include fontDetails(normal, 14px, 167.2%);
+            margin: 0 0 22.15px 0;
+        }
+    }
+
+    .feedback-email {
+        border: none;
+        width: 245px;
+        height: 46.94px;
+        padding: 6.71px 125px 5.75px 21.07px;
+
+    }
+
+    .subscribe-button {
+        border: none;
+        width: 95.79px;
+        height: 46.94px;
+    }
+
+    .footer {
+        min-height: 143px;
+        
+        &-position {
+            flex-direction: column;
+        }
+
+        &-copyright {
+            order: 2;
+            margin-bottom: 9px;
+        }
+    }
+
+    .social-links {
+        margin: 43px 0 40px 0;
+    }
+
+}
